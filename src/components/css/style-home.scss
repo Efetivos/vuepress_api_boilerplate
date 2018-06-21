@@ -1,0 +1,77 @@
+@import 'normal-reset';
+@import 'alias-mixins';
+
+$color : #530202;
+body {
+    background: #000 !important;
+}
+.body {
+    @include flex-center-col;
+    background: #000;
+
+    span, li {
+        color: #ccc;
+        padding: 3vh;
+    }
+
+    p {
+        color: yellow;
+    }
+}
+.ctn {
+    margin-top: 4vh;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .ctn-each-novidade  {
+        width: 14vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2vh;
+
+        img {
+            width: 100%;
+            height: 36vh;
+            object-fit: cover;
+        }
+    }
+}
+h1 {
+    margin: 15px 0;
+    color: #3cc565;
+    font-size: 15px;
+    @include sans;   
+}
+
+img {
+    width: 35vw;
+    height: 45vh;
+}
+
+a {
+    h1 {
+        color: #ffffff;
+    }
+}
+
+p{
+    @include sans;  
+    color: aquamarine;
+}
+
+.modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #666;
+    width: 35vw;
+    height: 100vh;
+}
+
+.fader {
+    background: #000;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
