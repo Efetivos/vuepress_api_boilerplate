@@ -9,9 +9,9 @@
 				img.aiai(v-bind:src="novidade.cover").e-wp.e-hp
 				h1 {{novidade.titulo}}
 				p {{novidade.conteudo}}
-				
-        router-link( :to="{path: '/'+novidade.slug}") ////Link dinamico para cada Postagem (vue-router) + Passa o Slug para o Router
-				router-link( :to="{ name: 'novidade', params: { slug: novidade.slug}}").t-black //ALTERNATIVE
+                
+                
+				router-link( :to="{path: '/'+novidade.slug}") 
 					h1 LINK TO novidade 
 
 
