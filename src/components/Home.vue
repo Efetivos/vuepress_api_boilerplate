@@ -10,7 +10,8 @@
 				h1 {{novidade.titulo}}
 				p {{novidade.conteudo}}
 				
-				router-link( :to="{ name: 'novidade', params: { slug: novidade.slug}}").t-black
+        router-link( :to="{path: '/'+novidade.slug}") ////Link dinamico para cada Postagem (vue-router) + Passa o Slug para o Router
+				router-link( :to="{ name: 'novidade', params: { slug: novidade.slug}}").t-black //ALTERNATIVE
 					h1 LINK TO novidade 
 
 
